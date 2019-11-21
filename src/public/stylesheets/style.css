@@ -6,11 +6,17 @@ body {
 a {
   color: #00b7ff;
 }
+ul {
+  display: flex;
+  flex-direction: row;
+}
 li {
-  padding: 2px;
+  width: 100%;
+  padding-bottom: 5px;
+  display: inline-block;
 }
 
-button {
+button:not(#home) {
   margin-right: 10px;
   margin-left: 10px;
 }
