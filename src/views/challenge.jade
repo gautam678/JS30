@@ -1,0 +1,12 @@
+extends layout
+block content
+  h1 Gautam's JS 30 Challenge
+  ul#links
+  each val in files
+    li 
+      a(href=val)= val 
+      button(onclick="navStartHTML("+val.toString()+")") My Solution
+      button(onclick="navFinishHTML("+val.toString()+")") Instructor's Solution
+
+
+
