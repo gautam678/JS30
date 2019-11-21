@@ -4,9 +4,10 @@ block content
   ul#links
   each val in files
     li 
-      a(href=val)= val 
+      a= "Day "+val 
       button(onclick="navStartHTML("+val.toString()+")") My Solution
       button(onclick="navFinishHTML("+val.toString()+")") Instructor's Solution
+      
 
 
 
