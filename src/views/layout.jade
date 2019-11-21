@@ -1,0 +1,33 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    block content
+
+script.
+  var navStartHTML = function(path) {
+    if (path<10)
+    {
+      var path="0"+path
+      window.location.href= path+"/index-START.html"
+    }else
+    {
+    window.location.href= path+"/index-START.html"}
+  }
+
+  var navFinishHTML = function(path){
+    if (path<10)
+    {
+      var path="0"+path
+      window.location.href= path+"/index-FINISHED.html"
+    }
+    else{
+    window.location.href = path+"/index-FINISHED.html"
+    }
+  }
+
+  var navToChallenge= function(){
+    window.location.href = "/challenge/"
+  }
